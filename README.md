@@ -17,7 +17,7 @@ mutation{
 ```
 
 Add dream
-```
+```graphql
 mutation{
   addDream(title:"title", content:"content test", category:"nightmare", user_id: "5dce198e5beb024a6453fdbd"){
     id
@@ -30,7 +30,7 @@ mutation{
 ```
 
 Delete dream 
-```
+```graphql
 mutation{
   removeDream(id:"5dce2205ddb1114a34582af7"){
     id
@@ -39,7 +39,7 @@ mutation{
 ```
 
 Edit dream
-```
+```graphql
 mutation{
   editDream(id:"5dce1d6640b93109fceca2e0", title:"NewTitle", content:"new content", category:"nigtmare"){
     id
@@ -54,7 +54,7 @@ mutation{
 ### Queries
 
 Get users
-```
+```graphql
 {
   users{
     sub
@@ -74,7 +74,7 @@ Get users
 ```
 
 Get User by Sub
-```
+```graphql
 {
   user(sub:"429721"){
     id
